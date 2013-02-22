@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34E298B416D743CD007C5BBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E298B316D743CD007C5BBF /* UIKit.framework */; };
+		34E298B616D743CD007C5BBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E298B516D743CD007C5BBF /* Foundation.framework */; };
+		34E298B816D743CD007C5BBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E298B716D743CD007C5BBF /* CoreGraphics.framework */; };
+		34E298BE16D743CD007C5BBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34E298BC16D743CD007C5BBF /* InfoPlist.strings */; };
+		34E298C016D743CD007C5BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E298BF16D743CD007C5BBF /* main.m */; };
+		34E298C416D743CD007C5BBF /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E298C316D743CD007C5BBF /* TTAppDelegate.m */; };
+		34E298C616D743CD007C5BBF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E298C516D743CD007C5BBF /* Default.png */; };
+		34E298C816D743CD007C5BBF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E298C716D743CD007C5BBF /* Default@2x.png */; };
+		34E298CA16D743CD007C5BBF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E298C916D743CD007C5BBF /* Default-568h@2x.png */; };
+		34E298CD16D743CD007C5BBF /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E298CC16D743CD007C5BBF /* TTViewController.m */; };
+		34E298D016D743CD007C5BBF /* TTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E298CE16D743CD007C5BBF /* TTViewController_iPhone.xib */; };
+		34E298D316D743CD007C5BBF /* TTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E298D116D743CD007C5BBF /* TTViewController_iPad.xib */; };
+		34E298DA16D743EE007C5BBF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E298D916D743EE007C5BBF /* Social.framework */; };
+		34E298DE16D74971007C5BBF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E298DD16D74971007C5BBF /* Accounts.framework */; };
+		34E298E116D74BFF007C5BBF /* MPTwitterBones.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E298E016D74BFF007C5BBF /* MPTwitterBones.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34E298B016D743CD007C5BBF /* TestingTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E298B316D743CD007C5BBF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		34E298B516D743CD007C5BBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34E298B716D743CD007C5BBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34E298BB16D743CD007C5BBF /* TestingTweet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingTweet-Info.plist"; sourceTree = "<group>"; };
+		34E298BD16D743CD007C5BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34E298BF16D743CD007C5BBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34E298C116D743CD007C5BBF /* TestingTweet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingTweet-Prefix.pch"; sourceTree = "<group>"; };
+		34E298C216D743CD007C5BBF /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
+		34E298C316D743CD007C5BBF /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
+		34E298C516D743CD007C5BBF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		34E298C716D743CD007C5BBF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		34E298C916D743CD007C5BBF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		34E298CB16D743CD007C5BBF /* TTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
+		34E298CC16D743CD007C5BBF /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
+		34E298CF16D743CD007C5BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTViewController_iPhone.xib; sourceTree = "<group>"; };
+		34E298D216D743CD007C5BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTViewController_iPad.xib; sourceTree = "<group>"; };
+		34E298D916D743EE007C5BBF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		34E298DD16D74971007C5BBF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		34E298DF16D74BFF007C5BBF /* MPTwitterBones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTwitterBones.h; sourceTree = "<group>"; };
+		34E298E016D74BFF007C5BBF /* MPTwitterBones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTwitterBones.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34E298AD16D743CD007C5BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E298DE16D74971007C5BBF /* Accounts.framework in Frameworks */,
+				34E298DA16D743EE007C5BBF /* Social.framework in Frameworks */,
+				34E298B416D743CD007C5BBF /* UIKit.framework in Frameworks */,
+				34E298B616D743CD007C5BBF /* Foundation.framework in Frameworks */,
+				34E298B816D743CD007C5BBF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34E298A716D743CD007C5BBF = {
+			isa = PBXGroup;
+			children = (
+				34E298DD16D74971007C5BBF /* Accounts.framework */,
+				34E298D916D743EE007C5BBF /* Social.framework */,
+				34E298B916D743CD007C5BBF /* TestingTweet */,
+				34E298B216D743CD007C5BBF /* Frameworks */,
+				34E298B116D743CD007C5BBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34E298B116D743CD007C5BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34E298B016D743CD007C5BBF /* TestingTweet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34E298B216D743CD007C5BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34E298B316D743CD007C5BBF /* UIKit.framework */,
+				34E298B516D743CD007C5BBF /* Foundation.framework */,
+				34E298B716D743CD007C5BBF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34E298B916D743CD007C5BBF /* TestingTweet */ = {
+			isa = PBXGroup;
+			children = (
+				34E298C216D743CD007C5BBF /* TTAppDelegate.h */,
+				34E298C316D743CD007C5BBF /* TTAppDelegate.m */,
+				34E298CB16D743CD007C5BBF /* TTViewController.h */,
+				34E298CC16D743CD007C5BBF /* TTViewController.m */,
+				34E298DF16D74BFF007C5BBF /* MPTwitterBones.h */,
+				34E298E016D74BFF007C5BBF /* MPTwitterBones.m */,
+				34E298CE16D743CD007C5BBF /* TTViewController_iPhone.xib */,
+				34E298D116D743CD007C5BBF /* TTViewController_iPad.xib */,
+				34E298BA16D743CD007C5BBF /* Supporting Files */,
+			);
+			path = TestingTweet;
+			sourceTree = "<group>";
+		};
+		34E298BA16D743CD007C5BBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34E298BB16D743CD007C5BBF /* TestingTweet-Info.plist */,
+				34E298BC16D743CD007C5BBF /* InfoPlist.strings */,
+				34E298BF16D743CD007C5BBF /* main.m */,
+				34E298C116D743CD007C5BBF /* TestingTweet-Prefix.pch */,
+				34E298C516D743CD007C5BBF /* Default.png */,
+				34E298C716D743CD007C5BBF /* Default@2x.png */,
+				34E298C916D743CD007C5BBF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34E298AF16D743CD007C5BBF /* TestingTweet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34E298D616D743CD007C5BBF /* Build configuration list for PBXNativeTarget "TestingTweet" */;
+			buildPhases = (
+				34E298AC16D743CD007C5BBF /* Sources */,
+				34E298AD16D743CD007C5BBF /* Frameworks */,
+				34E298AE16D743CD007C5BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingTweet;
+			productName = TestingTweet;
+			productReference = 34E298B016D743CD007C5BBF /* TestingTweet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34E298A816D743CD007C5BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Matthew Palmer";
+			};
+			buildConfigurationList = 34E298AB16D743CD007C5BBF /* Build configuration list for PBXProject "TestingTweet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 34E298A716D743CD007C5BBF;
+			productRefGroup = 34E298B116D743CD007C5BBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34E298AF16D743CD007C5BBF /* TestingTweet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34E298AE16D743CD007C5BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E298BE16D743CD007C5BBF /* InfoPlist.strings in Resources */,
+				34E298C616D743CD007C5BBF /* Default.png in Resources */,
+				34E298C816D743CD007C5BBF /* Default@2x.png in Resources */,
+				34E298CA16D743CD007C5BBF /* Default-568h@2x.png in Resources */,
+				34E298D016D743CD007C5BBF /* TTViewController_iPhone.xib in Resources */,
+				34E298D316D743CD007C5BBF /* TTViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34E298AC16D743CD007C5BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E298C016D743CD007C5BBF /* main.m in Sources */,
+				34E298C416D743CD007C5BBF /* TTAppDelegate.m in Sources */,
+				34E298CD16D743CD007C5BBF /* TTViewController.m in Sources */,
+				34E298E116D74BFF007C5BBF /* MPTwitterBones.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34E298BC16D743CD007C5BBF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E298BD16D743CD007C5BBF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		34E298CE16D743CD007C5BBF /* TTViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E298CF16D743CD007C5BBF /* en */,
+			);
+			name = TTViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		34E298D116D743CD007C5BBF /* TTViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E298D216D743CD007C5BBF /* en */,
+			);
+			name = TTViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34E298D416D743CD007C5BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34E298D516D743CD007C5BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34E298D716D743CD007C5BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestingTweet/TestingTweet-Prefix.pch";
+				INFOPLIST_FILE = "TestingTweet/TestingTweet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		34E298D816D743CD007C5BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestingTweet/TestingTweet-Prefix.pch";
+				INFOPLIST_FILE = "TestingTweet/TestingTweet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34E298AB16D743CD007C5BBF /* Build configuration list for PBXProject "TestingTweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E298D416D743CD007C5BBF /* Debug */,
+				34E298D516D743CD007C5BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34E298D616D743CD007C5BBF /* Build configuration list for PBXNativeTarget "TestingTweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E298D716D743CD007C5BBF /* Debug */,
+				34E298D816D743CD007C5BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34E298A816D743CD007C5BBF /* Project object */;
+}
