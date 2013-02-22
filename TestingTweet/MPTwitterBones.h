@@ -15,5 +15,5 @@
 @property (nonatomic) ACAccountStore *accountStore;
 
 -(BOOL)userHasAccessToTwitter;
--(void)fetchTimelineForUser:(NSString *)username;
+-(void)fetchTimelineForUser;
 @end

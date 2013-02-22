@@ -7,5 +7,6 @@
 
 - Error handling is pretty poor.
 - Only has one function: getting a user's tweets from the people they follow (their `home_timeline`) - this can be changed in the URL declaration in MPTwitterBones.m
+- Uses the first Twitter account by default. You could change this pretty easily
 
 Contact me on [Twitter](http://twitter.com/p_almer) if you need help or think of something else you think should be added.

@@ -14,9 +14,12 @@
     return [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter];
     
 }
--(void)fetchTimelineForUser:(NSString *)username
+-(void)fetchTimelineForUser
 {
     _accountStore = [[ACAccountStore alloc]init];
+    
+    
+    
     
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
         NSLog(@"SLComposeViewController is available - you're probably on the right iOS version");
@@ -26,6 +29,13 @@
             if (granted) {
                 //create the request
                 NSArray *twitterAccounts = [[self accountStore]accountsWithAccountType:twitterAccountType];
+                
+                ACAccount *account = [twitterAccounts objectAtIndex:0]; //gets the first useraccount in the array. If you have multiple accounts you'll have to work something out
+                
+                
+                NSString *username = [account username];
+                NSLog(@"The username for the account you are working with is '%@' \n",username);
+                
                 NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
                               @"/1.1/statuses/home_timeline.json"];
                 

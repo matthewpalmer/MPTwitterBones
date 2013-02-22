@@ -30,6 +30,6 @@
 {
     MPTwitterBones *tBones = [[MPTwitterBones alloc]init];
     [tBones userHasAccessToTwitter];
-    [tBones fetchTimelineForUser:@"p_almer"];
+    [tBones fetchTimelineForUser];
 }
 @end
