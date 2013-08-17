@@ -10,10 +10,14 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 
+typedef void (^CallbackBlock)();
+
 @interface MPTwitterBones : NSObject
-
+@property (copy) CallbackBlock cb;
 @property (nonatomic) ACAccountStore *accountStore;
+@property (nonatomic, strong) NSMutableArray *arrayOfTweets;
+@property (nonatomic, strong) NSDictionary *timelineData;
 
+-(void)fetchTimelineForUser:(CallbackBlock)block;
 -(BOOL)userHasAccessToTwitter;
--(void)fetchTimelineForUser;
 @end

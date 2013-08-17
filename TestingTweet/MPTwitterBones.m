@@ -14,13 +14,12 @@
     return [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter];
     
 }
--(void)fetchTimelineForUser
+-(void)fetchTimelineForUser:(CallbackBlock)block
 {
+    //set up the block to be called back;
+    self.cb = block;
+    
     _accountStore = [[ACAccountStore alloc]init];
-    
-    
-    
-    
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
         NSLog(@"SLComposeViewController is available - you're probably on the right iOS version");
         //obtain access
@@ -42,13 +41,15 @@
                 NSDictionary *params = @{@"screen_name" : username,
                                          @"include_rts" : @"0",
                                          @"trim_user"   : @"1",
-                                         @"count"       : @"1"
+                                         @"count"       : @"15"
                                          };
                 
                 SLRequest *req = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:url parameters:params];
                 
                 //attach account to request
                 [req setAccount:[twitterAccounts lastObject]];
+                
+                
                 //execute req
                 [req performRequestWithHandler:^(NSData *responseData,
                                                  NSHTTPURLResponse *urlResponse,
@@ -57,24 +58,35 @@
                         if ([urlResponse statusCode]>= 200 && [urlResponse statusCode]<300) {
                             NSError *jsonError;
                             NSDictionary *timelineData = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&jsonError];
+                            
                             if (timelineData) {
-                                NSLog(@"timeline: %@",timelineData);
-                            } else {
+                                [self setTimelineData:timelineData];
+                                //[self cb];
+                                //execute the callback block
+                                self.cb();
+                                NSLog(@"timeline data in mptwitterbones found");
+                                
+                                
+                            } else {        //TODO: handle these errors properly
                                 //err
                                 NSLog(@"json err %@",[jsonError localizedDescription]);
+                                self.cb();
                             }
                         } else {
                             //server error
                             NSLog(@"response code %d", [urlResponse statusCode]);
+                            self.cb();
                         }
                         
                     }
                 }];
             } else {
                 NSLog(@"Access error or something %@", [error localizedDescription]);
+                self.cb();
             }
         }];
     }
-
+    NSLog(@"bottom point of fetch reached");
 }
+
 @end

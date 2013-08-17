@@ -12,6 +12,8 @@
 
 @end
 
+dispatch_queue_t twitterQueue;
+
 @implementation TTViewController
 
 - (void)viewDidLoad
@@ -28,8 +30,22 @@
 }
 -(void)SCTwitter
 {
-    MPTwitterBones *tBones = [[MPTwitterBones alloc]init];
-    [tBones userHasAccessToTwitter];
-    [tBones fetchTimelineForUser];
+    MPTwitterBones *twitterBones = [[MPTwitterBones alloc]init];
+    [twitterBones userHasAccessToTwitter];
+    //Testing blocks
+    twitterQueue = dispatch_queue_create("im.palmer.twitterQeue", nil);
+    dispatch_async(twitterQueue, ^{
+        [twitterBones fetchTimelineForUser:^{
+            NSLog(@"inside block %@", [twitterBones timelineData]);
+        }];
+        
+        
+        //Do something with Twitter results
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //UI updates have to be on the main thread
+            
+        });
+    });
 }
 @end
